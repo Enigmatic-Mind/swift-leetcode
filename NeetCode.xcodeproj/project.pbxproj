@@ -1,0 +1,98 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXFileReference section */
+		0B8473112FBB9D0D00EDAC20 /* To learn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "To learn.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0B84730F2FBB842D00EDAC20 /* Sliding Window */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Sliding Window";
+			sourceTree = "<group>";
+		};
+		0B8473132FBB9EF100EDAC20 /* Two Pointers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Two Pointers";
+			sourceTree = "<group>";
+		};
+		0B8473162FBB9F1000EDAC20 /* Stack */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Stack;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXGroup section */
+		0B8473082FBB842300EDAC20 = {
+			isa = PBXGroup;
+			children = (
+				0B8473112FBB9D0D00EDAC20 /* To learn.swift */,
+				0B84730F2FBB842D00EDAC20 /* Sliding Window */,
+				0B8473132FBB9EF100EDAC20 /* Two Pointers */,
+				0B8473162FBB9F1000EDAC20 /* Stack */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		0B8473092FBB842300EDAC20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2600;
+			};
+			buildConfigurationList = 0B84730C2FBB842300EDAC20 /* Build configuration list for PBXProject "NeetCode" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B8473082FBB842300EDAC20;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		0B84730D2FBB842300EDAC20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UYX853L96M;
+			};
+			name = Debug;
+		};
+		0B84730E2FBB842300EDAC20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UYX853L96M;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B84730C2FBB842300EDAC20 /* Build configuration list for PBXProject "NeetCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B84730D2FBB842300EDAC20 /* Debug */,
+				0B84730E2FBB842300EDAC20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B8473092FBB842300EDAC20 /* Project object */;
+}
