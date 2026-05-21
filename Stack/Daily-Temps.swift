@@ -6,7 +6,7 @@
 //
 
 class Solution {
-    func dailyTemperatures(_ temperatures: [Int]) -> [Int] {
+    func dailyTemperaturesNonOptimal(_ temperatures: [Int]) -> [Int] {
         var daysFrom = [Int]()
         
         for i in 0..<temperatures.count {
@@ -28,6 +28,26 @@ class Solution {
 
         return daysFrom
     }
+    
+    func dailyTemperatures(_ temperatures: [Int]) -> [Int] {
+        var daysFrom = Array(repeating: 0, count: temperatures.count)
+        var prevHighsStack = [Int]()
+        
+        for i in stride(from: temperatures.count - 1, through: 0, by: -1) {
+            while !prevHighsStack.isEmpty && temperatures[i] >= temperatures[prevHighsStack.last!] {
+                prevHighsStack.removeLast()
+            }
+            
+            if prevHighsStack.isEmpty {
+                daysFrom[i] = 0
+            } else {
+                daysFrom[i] = prevHighsStack.last! - i
+            }
+            prevHighsStack.append(i)
+        }
+
+        return daysFrom
+    }
 }
 
 
@@ -35,7 +55,8 @@ class Solution {
 
 
 /*
- Time: 45 mins
- Time Complexity: O(1) -> all operations are working from the top
- Space Complexity: O(n) -> two stacks so 2n
+ Optimal solution
+ Time: 36 mins
+ Time Complexity: O(n) -> worst case traverse through array + pop n-1 elements from stack which is 2n
+ Space Complexity: O(n) -> worst case store n elements in stack and in result array, so 2n.
  */
