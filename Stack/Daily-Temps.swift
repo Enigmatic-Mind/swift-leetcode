@@ -56,7 +56,7 @@ class Solution {
 
 /*
  Optimal solution
- Time: 36 mins
+ Time: 26 mins
  Time Complexity: O(n) -> worst case traverse through array + pop n-1 elements from stack which is 2n
  Space Complexity: O(n) -> worst case store n elements in stack and in result array, so 2n.
  */
