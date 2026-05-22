@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		0B3AF6592FBF73AC00570C80 /* Patterns.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Patterns.txt; sourceTree = "<group>"; };
+		0B3AF6592FBF73AC00570C80 /* Patterns.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Patterns.md; sourceTree = "<group>"; };
 		0B8473112FBB9D0D00EDAC20 /* To learn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "To learn.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		0B3AF6652FC0BD4200570C80 /* Arrays & Hashing */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Arrays & Hashing";
+			sourceTree = "<group>";
+		};
 		0B84730F2FBB842D00EDAC20 /* Sliding Window */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Sliding Window";
@@ -33,8 +38,9 @@
 		0B8473082FBB842300EDAC20 = {
 			isa = PBXGroup;
 			children = (
-				0B3AF6592FBF73AC00570C80 /* Patterns.txt */,
+				0B3AF6592FBF73AC00570C80 /* Patterns.md */,
 				0B8473112FBB9D0D00EDAC20 /* To learn.swift */,
+				0B3AF6652FC0BD4200570C80 /* Arrays & Hashing */,
 				0B84730F2FBB842D00EDAC20 /* Sliding Window */,
 				0B8473132FBB9EF100EDAC20 /* Two Pointers */,
 				0B8473162FBB9F1000EDAC20 /* Stack */,

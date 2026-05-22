@@ -20,12 +20,16 @@ array.count              // size
 array.removeLast() // — removes and returns the last element, crashes if empty
 array.popLast() // — removes and returns the last element as an optional, returns nil if empty
 array.last // — peeks at the last element without removing, returns optional
+array.indices // — returns a Range<Int> which is lazy, just a start and end value, no allocation.
+array.indices.reversed() // — returns a ReversedCollection which is also lazy. It doesn't create a new reversed array, it just traverses the original indices in reverse order on demand.
 
 
 // Dictionary operations
 dict[key] = value        // set
 dict[key]                // get (returns optional)
 dict.removeValue(forKey: key)  // delete
+freqDict[num, default: 0] += 1 // handle first case = nil
+
 
 
 let cars = zip(position, speed)
