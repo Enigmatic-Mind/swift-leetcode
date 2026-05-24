@@ -22,6 +22,7 @@ array.popLast() // — removes and returns the last element as an optional, retu
 array.last // — peeks at the last element without removing, returns optional
 array.indices // — returns a Range<Int> which is lazy, just a start and end value, no allocation.
 array.indices.reversed() // — returns a ReversedCollection which is also lazy. It doesn't create a new reversed array, it just traverses the original indices in reverse order on demand.
+var chars = Array(str)
 
 
 // Dictionary operations

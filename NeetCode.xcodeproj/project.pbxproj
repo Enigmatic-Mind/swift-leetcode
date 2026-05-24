@@ -32,6 +32,11 @@
 			path = Stack;
 			sourceTree = "<group>";
 		};
+		0B8816EE2FC3A07000395C15 /* Linked Lists */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Linked Lists";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXGroup section */
@@ -44,6 +49,7 @@
 				0B84730F2FBB842D00EDAC20 /* Sliding Window */,
 				0B8473132FBB9EF100EDAC20 /* Two Pointers */,
 				0B8473162FBB9F1000EDAC20 /* Stack */,
+				0B8816EE2FC3A07000395C15 /* Linked Lists */,
 			);
 			sourceTree = "<group>";
 		};
