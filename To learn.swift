@@ -50,3 +50,16 @@ Array(stride(...)) — explicitly materializes into array
 .map {} — creates a new array
 .filter {} — creates a new array
 .sorted {} — creates a new sorted array
+
+
+// Linked Lists
+let a = ListNode(1)
+let b = ListNode(1)
+let c = a
+
+a === b  // false — same value, different objects
+a === c  // true — same object
+
+
+var visited = Set<ObjectIdentifier>()
+let id = ObjectIdentifier(curr!)
