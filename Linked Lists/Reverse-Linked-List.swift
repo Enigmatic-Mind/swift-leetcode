@@ -40,10 +40,34 @@ class Solution {
         
         return nodeArray.last
     }
+    
+    func reverseListOptimal(_ head: ListNode?) -> ListNode? {
+            
+            var prevNode = head
+            var nextNode = head?.next
+
+            prevNode?.next = nil
+
+            while nextNode != nil {
+                var remainingList = nextNode?.next
+                
+                nextNode?.next = prevNode
+                prevNode = nextNode
+                nextNode = remainingList
+            }
+
+
+            return prevNode
+        }
 }
 
 /*
  Time: 16m
  Time complexity: O(n) -> iterating over n listnodes and the n sized array.
  Space complexity: O(n) -> storing n listnodes in array
+ 
+ 
+ Time: 20m
+ Time complexity: O(n) -> iterating over n listnodes and the n sized array.
+ Space complexity: O(1) -> storing two pointers
  */
