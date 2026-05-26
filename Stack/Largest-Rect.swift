@@ -8,72 +8,35 @@
 class Solution {
     func largestRectangleArea(_ heights: [Int]) -> Int {
         var largestArea = 0
-        var rectStack = [Int]()
+        var rectStack = [(Int, Int)]() // (Height, Index)
         
         for i in 0..<heights.count {
+            var startingIndex = i
+            while !rectStack.isEmpty && rectStack.last!.0 >= heights[i]{
+                // Pop rect from stack
+                let (rectHeight, rectLeftIndex) = rectStack.removeLast()
+                
+                // Keep starting index to use for new rect
+                startingIndex = rectLeftIndex
+                
+                // Update max area
+                let area = (i-rectLeftIndex) * rectHeight
+                if area > largestArea {
+                    largestArea = area
+                }
+            }
             
+            rectStack.append((heights[i], startingIndex))
         }
         
-        for rectLeft in rectStack {
-            
+        while !rectStack.isEmpty {
+            let (rectHeight, rectLeftIndex) = rectStack.removeLast()
+            let area = (heights.count - rectLeftIndex) * rectHeight
+            if area > largestArea {
+                largestArea = area
+            }
         }
         
         return largestArea
     }
 }
-
-
-class Solution {
-    func dailyTemperaturesNonOptimal(_ temperatures: [Int]) -> [Int] {
-        var daysFrom = [Int]()
-        
-        for i in 0..<temperatures.count {
-            let currTemp = temperatures[i]
-            
-            var days = 0
-            if i+1 < temperatures.count {
-                var tempDays = 0
-                for temp in temperatures[(i+1)...] {
-                    tempDays += 1
-                    if temp > currTemp {
-                        days = tempDays
-                        breakt
-                    }
-                }
-            }
-            daysFrom.append(days)
-        }
-
-        return daysFrom
-    }
-    
-    func dailyTemperatures(_ temperatures: [Int]) -> [Int] {
-        var daysFrom = Array(repeating: 0, count: temperatures.count)
-        var prevHighsStack = [Int]()
-        
-        for i in stride(from: temperatures.count - 1, through: 0, by: -1) {
-            while !prevHighsStack.isEmpty && temperatures[i] >= temperatures[prevHighsStack.last!] {
-                prevHighsStack.removeLast()
-            }
-            
-            if prevHighsStack.isEmpty {
-                daysFrom[i] = 0
-            } else {
-                daysFrom[i] = prevHighsStack.last! - i
-            }
-            prevHighsStack.append(i)
-        }
-
-        return daysFrom
-    }
-}
-
-
-
-
-
-/*
- Time:
- Time Complexity:
- Space Complexity:
- */
