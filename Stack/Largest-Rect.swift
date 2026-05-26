@@ -40,3 +40,10 @@ class Solution {
         return largestArea
     }
 }
+
+
+/*
+ Time: 30m
+ Time Complexity: O(n) -> traversing and popping all n elements O(2n) which simplifies
+ Space Complexity: O(n) -> storing a max of n elements in stack
+ */
