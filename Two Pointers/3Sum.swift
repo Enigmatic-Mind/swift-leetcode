@@ -22,3 +22,10 @@ class Solution {
         return Array(distinctSets)
     }
 }
+
+/*
+ Non optimal
+ Time:
+ Time Complexity: O(n^3)
+ Space Complexity: O(n) if you count the output
+ */
