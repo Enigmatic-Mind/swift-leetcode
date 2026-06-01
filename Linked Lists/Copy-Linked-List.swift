@@ -21,33 +21,36 @@ class Node {
 
 class Solution {
     func copyRandomList(_ head: Node?) -> Node? {
-        var curr = head
-        var nodeArray = [Node]()
-        while curr != nil {
-            if let node = curr {
-                nodeArray.append(Node(node.val))
-            }
-            
-            curr = curr?.next
-        }
+        guard let head = head else { return nil }
         
-        for i in nodeArray.indices.reversed() {
-            if i != 0 {
-                nodeArray[i-1].next = nodeArray[i]
-            }
+        var curr: Node? = head
+        var map = [ObjectIdentifier: Node]()
+        
+        while let node = curr {
+            map[ObjectIdentifier(node)] = Node(node.val)
+            curr = node.next
         }
         
         curr = head
-        var i = 0
-        while curr != nil {
-            if let node = curr {
-                nodeArray[i].random = node.random
+        
+        while let node = curr {
+            let copy = map[ObjectIdentifier(node)]!
+            if let next = node.next {
+                copy.next = map[ObjectIdentifier(next)]
             }
             
-            i += 1
-            curr = curr?.next
+            if let random = node.random {
+                copy.random = map[ObjectIdentifier(random)]
+            }
+            curr = node.next
         }
         
-        return nodeArray.first
+        return map[ObjectIdentifier(head)]
     }
 }
+
+
+/*
+ Time Complexity: O(n) -> two passes, linear time
+ Space Compleixty: O(n) -> dict stores n entries
+ */
