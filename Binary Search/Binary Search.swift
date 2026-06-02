@@ -25,3 +25,8 @@ class Solution {
         return -1
     }
 }
+
+/*
+ Time complexity: O(log(n*m))
+ Space complexity: O(1)
+ */
