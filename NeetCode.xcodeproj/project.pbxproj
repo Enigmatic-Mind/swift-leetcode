@@ -24,6 +24,11 @@
 			path = "Arrays & Hashing";
 			sourceTree = "<group>";
 		};
+		0B6528322FCF571900991E5E /* Binary Search */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Binary Search";
+			sourceTree = "<group>";
+		};
 		0B84730F2FBB842D00EDAC20 /* Sliding Window */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Sliding Window";
@@ -55,6 +60,7 @@
 				0B8473112FBB9D0D00EDAC20 /* To learn.swift */,
 				0B094B852FCA43180084137F /* Come Back to.txt */,
 				0B3AF6652FC0BD4200570C80 /* Arrays & Hashing */,
+				0B6528322FCF571900991E5E /* Binary Search */,
 				0B8816EE2FC3A07000395C15 /* Linked Lists */,
 				0B84730F2FBB842D00EDAC20 /* Sliding Window */,
 				0B8473162FBB9F1000EDAC20 /* Stack */,
