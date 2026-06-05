@@ -63,3 +63,16 @@ a === c  // true — same object
 
 var visited = Set<ObjectIdentifier>()
 let id = ObjectIdentifier(curr!)
+
+
+Int(1.5) // 1 — truncates toward zero
+Int(1.9) // 1 — still truncates
+
+Int(1.5.rounded())        // 2 — rounds half up
+Int(1.5.rounded(.up))     // 2 — ceiling
+Int(1.5.rounded(.down))   // 1 — floor
+
+ceil(1.1) // 2.0
+ceil(1.5) // 2.0
+ceil(1.9) // 2.0
+ceil(1.0) // 1.0 — already whole, stays

@@ -10,6 +10,7 @@
 		0B094B852FCA43180084137F /* Come Back to.txt */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Come Back to.txt"; sourceTree = "<group>"; };
 		0B095ECA2FC7771800F62FCA /* iOS Interview Guide.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "iOS Interview Guide.md"; sourceTree = "<group>"; };
 		0B3AF6592FBF73AC00570C80 /* Leet Code Guide.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Leet Code Guide.md"; sourceTree = "<group>"; };
+		0B59891E2FD223DF002D4C9B /* Git.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Git.md; sourceTree = "<group>"; };
 		0B8473112FBB9D0D00EDAC20 /* To learn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "To learn.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +58,7 @@
 			children = (
 				0B095ECA2FC7771800F62FCA /* iOS Interview Guide.md */,
 				0B3AF6592FBF73AC00570C80 /* Leet Code Guide.md */,
+				0B59891E2FD223DF002D4C9B /* Git.md */,
 				0B8473112FBB9D0D00EDAC20 /* To learn.swift */,
 				0B094B852FCA43180084137F /* Come Back to.txt */,
 				0B3AF6652FC0BD4200570C80 /* Arrays & Hashing */,
