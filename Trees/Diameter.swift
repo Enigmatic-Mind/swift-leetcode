@@ -7,10 +7,6 @@
 
 class Solution {
     func diameterOfBinaryTree(_ root: TreeNode?) -> Int {
-        maxDia = 0
-        
-        dfs(root)
-
         func dfs(_ node: TreeNode?) -> Int {
             guard let node else { return 0 }
 
@@ -22,6 +18,13 @@ class Solution {
             return max(left, right) + 1
         }
 
+        var maxDia = 0
+        
+        dfs(root)
+        
         return maxDia
     }
 }
+
+// Time complexity: O(n)
+// Space complexity: O(h), h is n if tree unbalanced, but log n if balanced
