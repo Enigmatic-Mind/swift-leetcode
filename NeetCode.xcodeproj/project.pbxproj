@@ -20,6 +20,11 @@
 			path = Trees;
 			sourceTree = "<group>";
 		};
+		0B0960962FE3547200E9D95A /* Bit */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Bit;
+			sourceTree = "<group>";
+		};
 		0B3AF6652FC0BD4200570C80 /* Arrays & Hashing */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Arrays & Hashing";
@@ -56,13 +61,14 @@
 		0B8473082FBB842300EDAC20 = {
 			isa = PBXGroup;
 			children = (
+				0B59891E2FD223DF002D4C9B /* Git.md */,
 				0B095ECA2FC7771800F62FCA /* iOS Interview Guide.md */,
 				0B3AF6592FBF73AC00570C80 /* Leet Code Guide.md */,
-				0B59891E2FD223DF002D4C9B /* Git.md */,
 				0B8473112FBB9D0D00EDAC20 /* To learn.swift */,
 				0B094B852FCA43180084137F /* Come Back to.txt */,
 				0B3AF6652FC0BD4200570C80 /* Arrays & Hashing */,
 				0B6528322FCF571900991E5E /* Binary Search */,
+				0B0960962FE3547200E9D95A /* Bit */,
 				0B8816EE2FC3A07000395C15 /* Linked Lists */,
 				0B84730F2FBB842D00EDAC20 /* Sliding Window */,
 				0B8473162FBB9F1000EDAC20 /* Stack */,
