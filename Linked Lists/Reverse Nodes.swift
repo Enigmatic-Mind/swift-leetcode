@@ -19,18 +19,26 @@
 
 class Solution {
     func reverseKGroup(_ head: ListNode?, _ k: Int) -> ListNode? {
-        var prev: ListNode? = nil
-        var curr = head
         var root = head
-        var hold = head
-        var tail : ListNode? = nil
+        
+        var prev: ListNode? = nil
+        var curr = root
+
+        var endOfPrevList: ListNode? = nil
+        var startofNextList: ListNode? = root
                 
-        while curr != nil && hold != nil {
-            // move hold k ahead
-            for i in 0..<k {
-                hold = hold?.next
+        var hasUpdatedRoot = false
+        var hasKNodes = true
+        
+        // move hold k ahead
+        for i in 0..<k {
+            if i == k-1 {
+                hsaKNodes = startofNextList != nil
             }
-            
+            startofNextList = startofNextList?.next
+        }
+        
+        while curr != nil && hasKNodes != nil {
             // reverse k nodes
             for i in 0..<k {
                 let list = curr?.next
@@ -39,19 +47,37 @@ class Solution {
                 curr = list
             }
             
-            // point prev to k list
-            
-            
-            // point end of k list to list
-            var end: ListNode? = prev
-            for i in 0..<k {
-                end = end?.next
+            if !hasUpdatedRoot {
+                root = prev
+                hasUpdatedRoot = true
             }
-            end.next = hold
             
+            // connect prev list to current set
+            endOfPrevList?.next = prev
+            
+            // connect current set to next list
+            endOfPrevList = prev
+            for i in 0..<k-1 {
+                endOfPrevList = endOfPrevList?.next
+            }
+            endOfPrevList?.next = startofNextList
+            prev = nil // clear it
+            
+            // move hold k ahead
+            for i in 0..<k {
+                if i == k-1 {
+                    hsaKNodes = startofNextList != nil
+                }
+                startofNextList = startofNextList?.next
+            }
         }
+        
+        endOfPrevList?.next = curr
         
         return root
         
     }
 }
+
+// Time complexity: O(n)
+// Space complexity: O(1)
