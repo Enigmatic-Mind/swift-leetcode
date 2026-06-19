@@ -77,6 +77,44 @@ class Solution {
         return root
         
     }
+    
+    func reverseKGroup(_ head: ListNode?, _ k: Int) -> ListNode? {
+        var dummy = ListNode(0)
+        dummy.next = head
+        
+        var groupPrev = dummy
+        while true {
+            var kth = getKth(groupPrev, k)
+            
+            if kth == nil { break }
+            let groupNext = kth?.next
+            
+            var prev = kth?.next
+            var curr = groupPrev.next
+            while curr !== groupNext {
+                let temp = curr?.next
+                curr?.next = prev
+                prev = curr
+                curr = temp
+            }
+            
+            let temp = groupPrev.next
+            groupPrev.next = kth
+            groupPrev = temp
+        }
+        
+        return dummy.next
+        
+        func getKth(_ curr: ListNode, _ k: Int) -> ListNode? {
+            var curr = curr
+            var k = k
+            while curr != nil && k > 0 {
+                curr = curr.next
+                k -= 1
+            }
+            return curr
+        }
+    }
 }
 
 // Time complexity: O(n)
