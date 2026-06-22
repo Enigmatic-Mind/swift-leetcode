@@ -32,3 +32,6 @@ class Solution {
         return root
     }
 }
+
+// Time complexity: O(n^2) - n nodes + mid val search each call
+// Space complexity: O(n^2) - n levels, each holds a copy of the sub level
