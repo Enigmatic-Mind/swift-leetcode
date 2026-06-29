@@ -55,6 +55,11 @@
 			path = "Linked Lists";
 			sourceTree = "<group>";
 		};
+		0BE02A9A2FF3222000AF9521 /* 1-DP */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "1-DP";
+			sourceTree = "<group>";
+		};
 		0BE279E02FEB309300266E76 /* Back Tracking */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Back Tracking";
@@ -80,6 +85,7 @@
 				0B8473162FBB9F1000EDAC20 /* Stack */,
 				0B094B862FCA43330084137F /* Trees */,
 				0B8473132FBB9EF100EDAC20 /* Two Pointers */,
+				0BE02A9A2FF3222000AF9521 /* 1-DP */,
 			);
 			sourceTree = "<group>";
 		};
