@@ -76,3 +76,29 @@ ceil(1.1) // 2.0
 ceil(1.5) // 2.0
 ceil(1.9) // 2.0
 ceil(1.0) // 1.0 — already whole, stays
+
+
+Arrays
+Backed by a contiguous block of memory.
+O(1) append (amortized), O(n) insert/delete at arbitrary index.
+Ideal for ordered, indexable collections.
+            
+Sets
+Unordered collection of unique elements.
+O(1) membership checks (on average).
+Useful when you care about uniqueness or need fast existence checks.
+            
+Dictionaries
+Key–value pairs, backed by a hash table.
+O(1) insert, lookup, delete (on average).
+Common for mapping IDs to models, caching, etc.
+            
+Linked Lists
+Rarely needed explicitly in Swift (but good to know for interviews).
+O(1) insert/delete at head; O(n) search.
+Example: Custom LRU cache implementation.
+
+Stacks & Queues
+Stacks (LIFO) and queues (FIFO) are conceptual patterns you can implement with
+arrays.
+Used in navigation (stack-based) and task processing (queue-based).
