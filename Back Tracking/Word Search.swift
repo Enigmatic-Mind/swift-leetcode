@@ -6,6 +6,8 @@
 //
 
 class Solution {
+    // Time: O(n * 4^L) -> n total char in the board, L word length
+    // Space: O(L^2)
     func nonoptimal_exist(_ board: [[Character]], _ word: String) -> Bool {
         var wordChars = Array(word)
         
@@ -37,6 +39,8 @@ class Solution {
         return false
     }
     
+    // Time: O(n * 4^L) -> n total char in the board, L word length
+    // Space: O(L)
     func exist(_ board: [[Character]], _ word: String) -> Bool {
         var wordChars = Array(word)
         
@@ -72,5 +76,4 @@ class Solution {
     }
 }
 
-// Time: O(n * 4^L) -> n total char in the board, L word length
-// Space: O(L^2)
+
