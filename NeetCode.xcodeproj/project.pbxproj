@@ -35,6 +35,11 @@
 			path = "Binary Search";
 			sourceTree = "<group>";
 		};
+		0B78A6D22FFC1FD50002AB26 /* Heap, Priority Queue */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Heap, Priority Queue";
+			sourceTree = "<group>";
+		};
 		0B84730F2FBB842D00EDAC20 /* Sliding Window */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Sliding Window";
@@ -86,6 +91,7 @@
 				0B8473162FBB9F1000EDAC20 /* Stack */,
 				0B094B862FCA43330084137F /* Trees */,
 				0B8473132FBB9EF100EDAC20 /* Two Pointers */,
+				0B78A6D22FFC1FD50002AB26 /* Heap, Priority Queue */,
 			);
 			sourceTree = "<group>";
 		};

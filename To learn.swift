@@ -102,3 +102,19 @@ Stacks & Queues
 Stacks (LIFO) and queues (FIFO) are conceptual patterns you can implement with
 arrays.
 Used in navigation (stack-based) and task processing (queue-based).
+
+
+Heap
+
+import Collections
+heap.insert(val)      // O(log n)
+heap.min              // peek min, O(1)
+heap.max              // peek max, O(1)
+heap.popMin()         // remove and return min, O(log n)
+heap.popMax()         // remove and return max, O(log n)
+heap.count            // O(1)
+heap.isEmpty          // O(1)
+var heap = Heap<Int>()
+heap.insert(3)
+var heap = Heap([3, 1, 4, 1, 5, 9, 2, 6])
+
